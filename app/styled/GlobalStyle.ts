@@ -185,11 +185,64 @@ const normalize = `
     }
 `;
 
-
 export const GlobalStyle = createGlobalStyle`
     ${normalize}
-    body {
-        background: black;
-        color: red;
-    }
+
+    @font-face {
+        font-family: "Montserrat";
+        font-weight: 400;
+        font-style: normal;
+        src: url("/fonts/Montserrat-Regular.woff2") format("woff2"),
+        url("/fonts/Montserrat-Regular.woff") format("font-woff");
+      }
+    
+      /** Montserrat Medium **/
+      @font-face {
+        font-family: "Montserrat";
+        font-weight: 500;
+        font-style: normal;
+        src: url("/fonts/Montserrat-Medium.woff2") format("woff2"),
+        url("/fonts/Montserrat-Medium.woff") format("font-woff");
+      }
+    
+      /** Montserrat SemiBold **/
+      @font-face {
+        font-family: "Montserrat";
+        font-weight: 600;
+        font-style: normal;
+        src: url("/fonts/Montserrat-SemiBold.woff2") format("woff2"),
+        url("/fonts/Montserrat-SemiBold.woff") format("font-woff");
+      }
+    
+      /** Montserrat Bold **/
+      @font-face {
+        font-family: "Montserrat";
+        font-weight: 700;
+        font-style: normal;
+        src: url("/fonts/Montserrat-Bold.woff2") format("woff2"),
+        url("/fonts/Montserrat-Bold.woff") format("font-woff");
+      }
+    
+      /** Bitter Regular **/
+      @font-face {
+        font-family: "Bitter";
+        src: url("/fonts/Bitter-Regular.woff2") format("woff2"),
+        url("/fonts/Bitter-Regular.woff") format("font-woff");
+      }
+
+      body {
+        font-family: 'Montserrat';
+        font-size: 16px;
+        line-height: 1.69;
+        color: #93918f;
+        position: relative;
+      }
+      
+      html, body {
+        overflow-x: hidden;
+      }
+  
+      a {
+        text-decoration: none;
+      }
 `;

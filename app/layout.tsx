@@ -1,8 +1,7 @@
 import StyledComponentsRegistry from './lib/registry';
 import { GlobalStyle } from './styled/GlobalStyle';
+
 import type { Metadata } from 'next'
-
-
 
 export const metadata: Metadata = {
   title: 'Reddit Timer',
@@ -18,8 +17,8 @@ export default function RootLayout({
     <html lang="en">
       <body>
         <StyledComponentsRegistry>
-          <GlobalStyle />
-          {children}
+            <GlobalStyle />
+            {children}
         </StyledComponentsRegistry>
       </body>
     </html>
