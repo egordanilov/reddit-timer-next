@@ -1,5 +1,7 @@
 import StyledComponentsRegistry from './lib/registry';
 import { GlobalStyle } from './styled/GlobalStyle';
+import Header from '@/components/Header';
+import Footer from '@/components/Footer';
 
 import type { Metadata } from 'next'
 
@@ -18,7 +20,9 @@ export default function RootLayout({
       <body>
         <StyledComponentsRegistry>
             <GlobalStyle />
+            <Header />
             {children}
+            <Footer />
         </StyledComponentsRegistry>
       </body>
     </html>

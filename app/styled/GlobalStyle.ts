@@ -236,6 +236,7 @@ export const GlobalStyle = createGlobalStyle`
         line-height: 1.69;
         color: #93918f;
         position: relative;
+        min-height: 100vh;
       }
       
       html, body {
