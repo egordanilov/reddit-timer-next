@@ -9,7 +9,6 @@ export const HeaderWrapper = styled.header`
     align-items: center;
     background: #f1f1f1;
     padding: 0 80px;
-    margin-bottom: 50px;
     @media (min-width: 576px) and (max-width: 767px) {
         padding: 0 30px;
     }
