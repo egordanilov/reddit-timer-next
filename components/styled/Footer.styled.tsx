@@ -23,7 +23,7 @@ export const FooterLinksWrapper = styled.div`
     }
 
     a {
-        color: blue;
+        color: #1e2538;
         margin-left: 20px;
     }
 
