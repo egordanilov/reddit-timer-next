@@ -1,7 +1,9 @@
+import SearchInputSection from "@/components/SearchInputSection"
+
 export default function Search() {
     return(
-        <div>
-            Search page placeholder
-        </div>
+        <main>
+            <SearchInputSection />
+        </main>
     )
 }
