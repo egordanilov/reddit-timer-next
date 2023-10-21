@@ -1,7 +1,7 @@
 'use client'
 import { useSearchParams, useRouter } from "next/navigation";
 import { useRef, useEffect, useState } from "react";
-import { SearchInputButton } from "./styled/SearchInputSection.styled";
+import { SearchInputButton, FormTitle, SearchInputSectionWrapper, SearchPageFormWrapper, SearchInput } from "./styled/SearchPage.styled";
 
 function SearchInputSection() {
     const searchParams = useSearchParams();
@@ -27,19 +27,23 @@ function SearchInputSection() {
    }
 
     return(
-        <form onSubmit={submitHandler}>
-            <div>
-                r/
-                <input
-                    type="text"
-                    name="subreddit"
-                    ref={inputRef}
-                    value={subreddit}
-                    onChange={(event) => {setSubreddit(event.target.value)}}
-                />
-                <SearchInputButton type="submit">SEARCH</SearchInputButton>
-            </div>
-        </form>
+        <SearchInputSectionWrapper>
+            <FormTitle>Find the best time for a subreddit</FormTitle>
+            <SearchPageFormWrapper onSubmit={submitHandler}>
+                <div>
+                    r /
+                    <SearchInput
+                        type="text"
+                        name="subreddit"
+                        ref={inputRef}
+                        value={subreddit}
+                        onChange={(event) => {setSubreddit(event.target.value)}}
+                    />
+                    <SearchInputButton type="submit">SEARCH</SearchInputButton>
+                </div>
+            </SearchPageFormWrapper>
+        </SearchInputSectionWrapper>
+        
     )
 }
 
