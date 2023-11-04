@@ -18,7 +18,7 @@ function SearchInputSection() {
             setSubreddit(search);
         }
 
-    }, []);
+    }, [search]);
 
    const submitHandler = (event:React.FormEvent) => {
         event.preventDefault();
